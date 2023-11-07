@@ -1,0 +1,57 @@
+package controller;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@WebServlet(
+		name = "Servlet",
+		urlPatterns	={"/cadastro","/controller","/insert"})
+
+
+public class Controller extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    
+    public Controller() {
+        super();
+       
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String action = request.getServletPath();
+		
+		System.out.println(action);
+		
+		if(action.equals("/cadastro")){
+			cadastro(request, response);
+		} else if (action.equals("/insert")) {
+			novoCadastro(request,response);
+		} else {
+			response.sendRedirect("index.html");
+		}
+	}
+
+	protected void cadastro (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.sendRedirect("cadastro.html");
+	}
+	
+	protected void novoCadastro (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		 String nome = request.getParameter("nome");
+		    String sobrenome = request.getParameter("sobrenome");
+		    String telefone = request.getParameter("telefone");
+		    String cargo = request.getParameter("cargo");
+		    String departamento = request.getParameter("departamento");
+
+		    System.out.println("Nome: " + nome);
+		    System.out.println("Sobrenome: " + sobrenome);
+		    System.out.println("Telefone: " + telefone);
+		    System.out.println("Cargo: " + cargo);
+		    System.out.println("Departamento: " + departamento);
+	}
+	
+
+}

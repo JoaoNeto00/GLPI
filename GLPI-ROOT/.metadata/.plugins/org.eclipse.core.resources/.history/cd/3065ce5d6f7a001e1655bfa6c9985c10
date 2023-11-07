@@ -1,0 +1,14 @@
+package model.usuario;
+
+public class Usuario {
+	
+	private int id_usuario;
+	private String nome;
+	private String sobrenome;
+	private String telefone;
+	private String cargo;
+	private String departamento;
+	private String dataCriacao;
+	
+	
+}

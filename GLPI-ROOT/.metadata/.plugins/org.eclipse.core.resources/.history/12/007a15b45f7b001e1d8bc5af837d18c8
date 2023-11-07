@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="assets/sytle.css" />
+        <script src="script/validador.js"></script>
+        <title>cadastro</title>
+    </head>
+    <body>
+        <section class="d-flex flex-column justify-content-center align-items-center bg-warning height-100vh">
+
+            <h1 class="mb-3">CADASTRO</h1>
+
+            <div class="border p-2 text-center">
+
+                <form name="frmCadastro" action="insert" method="post">
+                    
+                    <div class="row mb-2">
+                        <div class="col">
+                            <input type="text" class="form-control" name="nome" placeholder="Nome" />
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" name="sobrenome" placeholder="Sobrenome"  />
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col">
+                            <input type="text" class="form-control" name="telefone" placeholder="Telefone"  />
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col">
+                            <input type="text" class="form-control" name="cargo" placeholder="Cargo"  />
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <input type="text" class="form-control" name="departamento" placeholder="Departamento" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <input type="submit" class="btn btn-primary w-50" value="CADASTRAR" />
+                        </div>
+                    </div>
+
+                </form> 
+            </div>
+
+        </section>
+    </body>
+</html>

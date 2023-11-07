@@ -1,0 +1,11 @@
+package ticket;
+
+public class Ticket {
+	
+	private int id;
+	private String titulo;
+	private String descricao;
+	private 
+	
+	
+}

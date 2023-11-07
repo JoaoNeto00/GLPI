@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\projetos\GLPI-ROOT\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+987726595.index
+2500878085.index
+3059989218.index
+1981253864.index
+1001749327.index
+1605480720.index

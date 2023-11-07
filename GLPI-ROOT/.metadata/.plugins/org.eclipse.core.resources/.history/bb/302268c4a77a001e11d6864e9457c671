@@ -1,0 +1,23 @@
+package model.ticket;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class ConnectionBD {
+	
+	public Connection recuperarConexao() {
+		try {
+			Connection conn = DriverManager
+					.getConnection("jdbc:mysql://localhost:3306/glpi_banco?user=root&password=Jn@8949");
+			conn.close();
+		}catch (SQLException e){
+			throw new RuntimeException(e);
+		}
+		return null;
+		
+	}
+	
+	
+	
+}
